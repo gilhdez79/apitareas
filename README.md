@@ -32,7 +32,7 @@ Core a través del cual podremos ejecutar nuestras aplicaciones en servidor escr
 Para verificar que la instalación se ha realizado de forma correcta bastará con hacer
 ```    sh
     node -v
-    v6.11.0
+    v12.4.0
 ```
 ##2. Creación del proyecto
 Utilizamos las conocidos módulos `express y express-generator `  para generar la estructura de nuestro proyecto web.
@@ -42,9 +42,9 @@ Los instalamos de forma global.
     npm install -g express
     npm install -g express-generator
 
-Finalmente creamos nuestro proyecto que denominamos     **NodeJsMongoDBHelloWorld**
+Finalmente creamos nuestro proyecto que denominamos     **HelloWorld**
     
-    express NodeJsMongoDBHelloWorld
+    express HelloWorld
 Quedando una estructura de carpetas tal que así:
 
 
