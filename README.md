@@ -13,8 +13,11 @@ API para obtener datos de Tareas.
   - Se publicó en Heroku.
   - Se agrega reposotorio GIT
 ### Repositorio:
-Repositorio [Git](https://github.com/gilhdez79/apitareas)  | Repositorio [Heroku][PlHe]
+Repositorio [Git](https://github.com/gilhdez79/apitareas)  | Repositorio [Heroku](https://apptareasapi.herokuapp.com/api/tarea/)
 
+    https://github.com/gilhdez79/apitareas
+    
+    https://apptareasapi.herokuapp.com/api
 
 ### Cracion entorno de desarrollo
 
@@ -32,7 +35,7 @@ Core a través del cual podremos ejecutar nuestras aplicaciones en servidor escr
 Para verificar que la instalación se ha realizado de forma correcta bastará con hacer
 ```    sh
     node -v
-    v12.4.0
+    v6.11.0
 ```
 ##2. Creación del proyecto
 Utilizamos las conocidos módulos `express y express-generator `  para generar la estructura de nuestro proyecto web.
@@ -42,9 +45,9 @@ Los instalamos de forma global.
     npm install -g express
     npm install -g express-generator
 
-Finalmente creamos nuestro proyecto que denominamos     **HelloWorld**
+Finalmente creamos nuestro proyecto que denominamos     **NodeJsMongoDBHelloWorld**
     
-    express HelloWorld
+    express NodeJsMongoDBHelloWorld
 Quedando una estructura de carpetas tal que así:
 
 
@@ -52,7 +55,7 @@ Quedando una estructura de carpetas tal que así:
 En el fichero `package.json` se defines los módulos que vamos a necesitar en nuestra aplicación.
 
      {
-       "name": "helloworld",
+       "name": "nodejsmongodbhelloworld",
        "version": "0.0.0",
        "private": true,
        "scripts": {
