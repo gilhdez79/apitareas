@@ -52,7 +52,7 @@ Quedando una estructura de carpetas tal que así:
 En el fichero `package.json` se defines los módulos que vamos a necesitar en nuestra aplicación.
 
      {
-       "name": "nodejsmongodbhelloworld",
+       "name": "helloworld",
        "version": "0.0.0",
        "private": true,
        "scripts": {
