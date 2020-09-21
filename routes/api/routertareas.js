@@ -153,7 +153,32 @@ let updatetarea = Tarea
 });
 
 });
+router.put('/completado', (req, res) => {
 
+    let params = {
+        id_tarea:'',
+        completo:1,
+        tiempocomp:"0"
+    }
+
+if(req.body.id_tarea)params.id_tarea=req.body.id_tarea    ;
+if(req.body.completo)params.completo=req.body.completo;
+if(req.body.tiempocomp)params.tiempocomp=req.body.tiempocomp;
+
+console.log(params);
+
+let updatetarea = Tarea
+.findOneAndUpdate(
+    {id_tarea:req.body.id_tarea},
+    {$set : {"completo": params.completo,  "tiempocomp": req.body.tiempocomp}})
+.then((r)=>{
+    res.json({msg:"Los datos se han Actualizado"});
+}, (err)=>{
+    res.json({msg:"No se encontró informacion"});
+
+});
+
+});
 getTareas = async id_tarea =>{
     
     //console.log(`lat a${lat} ${long}`);
